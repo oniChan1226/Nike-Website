@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- faviicon -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Nike</title>
+</head>
+
+<body class="dark:bg-slate-900">
+
+    <header class="md:my-12 p-12 md:p-0 sm:w-[80%] md:w-[70%] mx-auto flex justify-between items-center relative">
+        <!-- logo -->
+        <div>
+            <img src="assets/images/header-logo.svg" alt="" width="130px">
+        </div>
+        <!-- navBar -->
+        <nav class="hidden md:block">
+            <ul class="flex items-center justify-center space-x-16">
+                <li class="hover:-translate-y-1 duration-500 transition-all"><a class="text-xl text-gray-500 dark:text-[#efefef] hover:text-orange-500 dark:hover:text-orange-500 duration-300"
+                        href="#">Home</a></li>
+                <li class="hover:-translate-y-1 duration-500 transition-all"><a class="text-xl text-gray-500 dark:text-[#efefef] hover:text-orange-500 dark:hover:text-orange-500 duration-300"
+                        href="#products">Products</a></li>
+                <li class="hover:-translate-y-1 duration-500 transition-all"><a class="text-xl text-gray-500 dark:text-[#efefef] hover:text-orange-500 dark:hover:text-orange-500 duration-300"
+                        href="#about">About Us</a></li>
+                <li class="hover:-translate-y-1 duration-500 transition-all"><a class="text-xl text-gray-500 dark:text-[#efefef] hover:text-orange-500 dark:hover:text-orange-500 duration-300"
+                        href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- darkMode -->
+        <div id="darkModeToggle">
+            <i id="dark-icon" class="fa-solid fa-sun text-xl cursor-pointer w-4 dark:text-white hover:text-orange-500 dark:hover:text-orange-500"></i>
+        </div>
+
+        <!-- hamburger icon -->
+        <div id="menu-btn" class="hamburger md:hidden">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </div>
+
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+        <ul id="menu"
+            class="absolute w-full top-[-100%] left-0 flex flex-col space-y-6 py-6 bg-[rgba(0,0,0,0.8)] dark:bg-[rgba(250,250,250,0.9)] dark:text-black text-slate-200 items-center justify-center transition-all duration-500 z-10">
+            <li><a class="text-xl" href="#">Home</a></li>
+            <li><a class="text-xl" href="#products">Products</a></li>
+            <li><a class="text-xl" href="#about">About Us</a></li>
+            <li><a class="text-xl" href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- hero -->
+    <div class="flex flex-col md:flex-row items-center justify-center bg-[#fafafa] space-y-6 md:space-y-0 md:space-x-5 dark:bg-slate-800 dark:text-white mt-4 sm:mt-8 md:mt-20 p-8 rounded-md box-shadow-around w-full mx-auto fade-in-element">
+
+        <div class="left space-y-6 text-center md:text-start">
+            <h6 class="md:text-xl text-orange-500 tracking-wide">Our Summer collections</h6>
+            <div class="space-y-2">
+                <h1 class="text-4xl md:text-8xl font-bold">The New Arrival</h1>
+                <h1 class="text-4xl md:text-8xl font-bold"><span class="text-orange-600">Nike</span> Shoes</h1>
+            </div>
+            <p class="text-[#242425] dark:text-white md:text-xl">Discover stylish Nike arrivals, quality comfort, and innovation for your active life.</p>
+            <div>
+                <button class="bg-orange-600 hover:bg-orange-700 active:scale-90 duration-500 md:text-xl text-white md:px-6 px-4 md:py-3 py-1 rounded-full text-center group">Shop Now<i class="fa-solid fa-arrow-right ml-3 md:bg-white md:text-orange-600 px-2 rounded-full text-xs md:text-xl group-hover:translate-x-2 transition-all duration-500"></i></button>
+                
+            </div>
+            <div class="space-x-8 mx-4 py-8">
+
+                <div class="inline-block space-y-2">
+                    <span class="text-2xl sm:text-3xl md:text-5xl text-black dark:text-white tracking-wider font-bold">1k+</span><br>
+                    <span>Brands</span>
+                </div>
+
+                <div class="inline-block space-y-2">
+                    <span class="text-2xl sm:text-3xl md:text-5xl text-black dark:text-white tracking-wider font-bold">500+</span><br>
+                    <span>Shops</span>
+                </div>
+
+                <div class="inline-block space-y-2">
+                    <span class="text-2xl sm:text-3xl md:text-5xl text-black dark:text-white tracking-wider font-bold">250k+</span><br>
+                    <span>Customers</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="assets/images/big-shoe1.png" alt="" class="w-[200px] sm:w-[400px] md:w-auto">
+        </div>
+    </div>
+
+    <!-- products -->
+    <section id="products" class="sm:w-[80%] md:w-[70%] p-12 sm:p-0 mt-20 mx-auto">
+
+        <!-- heading -->
+        <div class="text-center md:text-start space-y-5 py-8 hidden-scroll">
+            <h2 class="text-xl sm:text-2xl md:text-4xl font-bold leading-6 tracking-wide dark:text-white">Our <span class="text-orange-500">Popular</span> Products</h2>
+            <p class="text-gray-600 max-w-[550px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio aspernatur molestias reiciendis earum tempore dolores.</p>
+        </div>
+
+        <!-- card-container -->
+        <div class="card-container flex flex-col md:flex-row text-center md:text-start items-center justify-around space-x-6 pb-20 ">
+            <!-- card-1 -->
+            <div class="card space-y-2 hidden-scroll">
+                <img src="assets/images/shoe4.svg" alt="" class="my-6 hover:scale-110 transition-all duration-500">
+                <!-- ratings -->
+                <div class="flex items-center justify-center md:justify-start">
+                    <img src="assets/icons/star.svg" alt="">
+                    <p class="text-gray-500 mx-2 text-xl">(4.8)</p>
+                </div>
+                <!-- text -->
+                <h2 class="text-2xl font-bold tracking-wide dark:text-white">Nike Air Jordon</h2>
+                <h4 class="text-xl text-orange-500 font-medium">$200.20</h4>
+            </div>
+            <!-- card-2 -->
+            <div class="card space-y-2 hidden-scroll">
+                <img src="assets/images/shoe5.svg" alt="" class="my-6 hover:scale-110 transition-all duration-500">
+                <!-- ratings -->
+                <div class="flex items-center justify-center md:justify-start">
+                    <img src="assets/icons/star.svg" alt="">
+                    <p class="text-gray-500 mx-2 text-xl">(4.5)</p>
+                </div>
+                <!-- text -->
+                <h2 class="text-2xl font-bold tracking-wide dark:text-white">Nike Air Max</h2>
+                <h4 class="text-xl text-orange-500 font-medium">$190.20</h4>
+            </div>
+            <!-- card-3 -->
+            <div class="card space-y-2 hidden-scroll">
+                <img src="assets/images/shoe6.svg" alt="" class="my-6 hover:scale-110 transition-all duration-500">
+                <!-- ratings -->
+                <div class="flex items-center justify-center md:justify-start">
+                    <img src="assets/icons/star.svg" alt="">
+                    <p class="text-gray-500 mx-2 text-xl">(4.7)</p>
+                </div>
+                <!-- text -->
+                <h2 class="text-2xl font-bold tracking-wide dark:text-white">Nike Air Cortez</h2>
+                <h4 class="text-xl text-orange-500 font-medium">$320.12</h4>
+            </div>
+            <!-- card-4 -->
+            <div class="card space-y-2 hidden-scroll">
+                <img src="assets/images/shoe7.svg" alt="" class="my-6 hover:scale-110 transition-all duration-500">
+                <!-- ratings -->
+                <div class="flex items-center justify-center md:justify-start">
+                    <img src="assets/icons/star.svg" alt="">
+                    <p class="text-gray-500 mx-2 text-xl">(4.6)</p>
+                </div>
+                <!-- text -->
+                <h2 class="text-2xl font-bold tracking-wide dark:text-white">Nike Air Huarache</h2>
+                <h4 class="text-xl text-orange-500 font-medium">$200.20</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- quality-section -->
+    <section class="min-h-[70vh] flex flex-col md:flex-row items-center justify-evenly space-y-8 md:space-y-0 p-6 md:p-0 hidden-scroll">
+
+        <div class="left space-y-5 text-center md:text-start">
+            <h2 class="text-2xl md:text-4xl font-bold leading-6 tracking-wide dark:text-white">We Provide You <span class="text-orange-500">Super Quality</span> Shoes</h2>
+            <p class="text-gray-600 max-w-[550px]">Ensuring premium comfort and style, our meticulously crafted footwear is designed to elevate your experience, providing you with unmatched quality, innovation, and a touch of elegance.</p>
+            <p class="text-gray-600 max-w-[550px] pt-4">Our dedication to detail and excellence ensures your satisfaction</p>
+            <div class="py-4">
+                <button class="bg-orange-600 hover:bg-orange-700 duration-500 md:text-xl text-white md:px-6 px-4 md:py-3 py-1 rounded-full text-center group">Shop Now<i class="fa-solid fa-arrow-right ml-3 md:bg-white md:text-orange-600 px-2 rounded-full text-xs md:text-xl group-hover:translate-x-2 transition-all duration-500"></i></button>
+                
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="assets/images/shoe8.svg" alt="">
+        </div>
+    </section>
+
+    <!-- cards-testimonials -->
+    <section class="min-h-[70vh] flex flex-col items-center justify-center hidden-scroll">
+        <h2 class="text-xl md:text-2xl font-medium text-center leading-6 tracking-widest text-orange-500 py-12">--Testimonials--</h2>
+
+        <div class="cards-container md:w-[80%] bg-[#ededed] dark:bg-slate-900 p-8 flex flex-col md:flex-row items-center justify-evenly space-y-4 md:space-y-0 md:space-x-5 ">
+            <!-- c-1 -->
+            <div class="bg-white dark:bg-slate-700 p-6 space-y-2 rounded-md h-56">
+                <img src="assets/icons/truck-fast.svg" alt="" class="bg-orange-600 p-2 rounded-full">
+                <h2 class="text-xl md:text-2xl font-bold leading-6 tracking-wide dark:text-white">Free shipping</h2>
+                <p class="text-gray-600 max-w-[550px] pt-2 dark:text-[#efefef]">Enjoy seamless shopping with our complimentary shipping service.</p>
+            </div>
+            <!-- c-2 -->
+            <div class="bg-white dark:bg-slate-700 p-6 space-y-2 rounded-md h-56">
+                <img src="assets/icons/shield-tick.svg" alt="" class="bg-orange-600 p-2 rounded-full">
+                <h2 class="text-xl md:text-2xl font-bold leading-6 tracking-wide dark:text-white">Secure Payment</h2>
+                <p class="text-gray-600 max-w-[550px] pt-2 dark:text-[#efefef]">Experience worry-free transactions with our secure payment options..</p>
+            </div>
+            <!-- c-3 -->
+            <div class="bg-white dark:bg-slate-700 p-6 space-y-2 rounded-md h-56">
+                <img src="assets/icons/support.svg" alt="" class="bg-orange-600 p-2 rounded-full">
+                <h2 class="text-xl md:text-2xl font-bold leading-6 tracking-wide dark:text-white">Love to help you</h2>
+                <p class="text-gray-600 max-w-[550px] pt-2 dark:text-[#efefef]">Our dedicated team is here to assist you every step of the way.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- special-offer -->
+    <section class="min-h-[80vh] p-8 flex flex-col md:flex-row items-center justify-evenly max-w-[1500px] mx-auto space-y-8 hidden-scroll-cards">
+        <div class="left">
+            <img src="assets/images/offer.svg" alt="">
+        </div>
+        <div class="right space-y-4 md:w-[50%] text-center md:text-start">
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold dark:text-white"><span class="text-orange-500">Special</span> Offer</h2>
+            <p class="text-gray-600 max-w-[550px] md:text-xl">Embark on a shopping journey that redefines your experience with unbeatable deals. From premier selections to incredible savings, we offer unparalleled value that sets us apart.</p>
+            <p class="text-gray-600 max-w-[550px] pt-3 md:text-xl">Navigate a realm of possibilities designed to fulfill your unique desires, surpassing the loftiest expectations. Your journey with us is nothing short of exceptional.</p>
+            <div class="py-4">
+                <button class="bg-orange-600 hover:bg-orange-700 duration-500 md:text-xl text-white md:px-6 px-4 md:py-3 py-1 rounded-full text-center group">View Details</button>
+                <button class="bg-transparent hover:bg-[#dbdada] border border-gray-500 duration-500 md:text-xl text-gray-500 md:px-6 px-4 md:py-3 py-1 rounded-full text-center group">Learn More</button>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- customer-section -->
+    <section id="about" class="min-h-[70vh] bg-blue-50 dark:bg-slate-700 px-4 pb-8 md:pb-0 pt-8 md:pt-28">
+        <main class="flex flex-col items-center justify-center space-y-3 fade-in-element">
+            <h2 class="text-3xl md:text-5xl font-medium dark:text-white py-2">What Our <span class="text-orange-600">Customers</span> Say?</h2>
+            <p class="text-gray-500 dark:text-gray-300 max-w-[450px] text-center">Hear genuine stories from our satisfied customers about their exceptional experiences with us.</p>
+        </main>
+
+        <div class="customer-cards flex flex-col md:flex-row items-center justify-evenly pb-8 pt-20 space-y-10 md:space-y-0 fade-in-element">
+            <!-- c-1 -->
+            <div class="c-1 flex flex-col items-center justify-center max-w-[420px] space-y-2 md:space-y-5 cool-shadow-effect px-8 py-4">
+                <img src="assets/images/customer2.svg" alt="" class="max-w-[100px]">
+                <p class="md:text-xl text-center text-gray-500 dark:text-gray-200 tracking-wide">The attention to detail and the quality of the product exceeded my expectations. Highly recommended!</p>
+                <div class="flex items-center space-x-2">
+                    <img src="assets/icons/star.svg" alt="">
+                    <span class="md:text-xl text-gray-500 dark:text-gray-200">(4.5)</span>
+                </div>
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-medium tracking-wide dark:text-white">Laura Lol</h2>
+            </div>
+            <!-- c-2 -->
+            <div class="c-2 flex flex-col items-center justify-center max-w-[420px] space-y-2 md:space-y-5 cool-shadow-effect px-8 py-4">
+                <img src="assets/images/customer2.svg" alt="" class="max-w-[100px]">
+                <p class="md:text-xl text-center text-gray-500 dark:text-gray-200 tracking-wide">The attention to detail and the quality of the product exceeded my expectations. Highly recommended!</p>
+                <div class="flex items-center space-x-2">
+                    <img src="assets/icons/star.svg" alt="">
+                    <span class="md:text-xl text-gray-500 dark:text-gray-200">(4.5)</span>
+                </div>
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-medium tracking-wide dark:text-white">Laura Lol</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- sign-up -->
+    <section id="contact" class="min-h-[50vh] my-12 p-12 md:p-4 md:w-[95%] lg:w-[80%] mx-auto flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:justify-between fade-in-element-bottom">
+
+        <aside class="left w-[350px] space-y-4 text-center md:text-start">
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold dark:text-white tracking-wide">Sign Up from</h2>
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold tracking-wide text-orange-600">Updates <span class="text-black dark:text-white">&</span></h2>
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold dark:text-white tracking-wide ">Newsletter</h2>
+        </aside>
+
+        <aside class="right">
+            <form action="#" class="relative">
+                <input type="email" name="email" id="myEmail" placeholder="Subscribe@nike.com" class="w-[298px] sm:w-[320px] md:w-[400px] lg:w-[600px] pl-5 py-3 md:py-5 rounded-full border border-gray-600 dark:border-black dark:bg-gray-600 dark:text-white">
+                <button class="absolute right-1 top-[10%] bg-orange-600 hover:bg-orange-700 duration-500 md:text-xl text-white md:px-6 px-4 py-2 md:py-3 rounded-full text-center group font-light">Subscribe</button>
+            </form>
+        </aside>
+    </section>
+
+    <!-- footer -->
+    <footer class="min-h-[50vh] bg-black">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6  px-8 md:px-0 md:w-[80%] mx-auto space-y-8 md:space-y-0 p-8 md:pt-24">
+            <!-- box-1 -->
+            <div class=" space-y-6">
+                <img src="assets/images/footer-logo.svg" alt="" class="w-[180px]">
+                <p class="text-gray-300 tracking-wide max-w-[400px]">Get shoes ready for the new term at your nearest Nike store. Find Your perfect Size In Store. Get&nbsp;Rewards</p>
+                <div class="flex items-center justify-start space-x-3">
+                    <i class="text-xl text-white hover:text-orange-500 cursor-pointer fab fa-facebook-f icon hover:flip"></i>
+                    <i class="text-xl text-white hover:text-orange-500 cursor-pointer fa-brands fa-instagram icon hover:flip"></i>
+                    <i class="text-xl text-white hover:text-orange-500 cursor-pointer fa-brands fa-x-twitter icon hover:flip"></i>
+                    <i class="text-xl text-white hover:text-orange-500 cursor-pointer fa-brands fa-linkedin icon hover:flip"></i>
+                </div>
+            </div>
+            <!-- box-2 -->
+            <div class=" space-y-6 text-white">
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-medium">Products</h2>
+                <div class="space-y-3">
+                    <h4 class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1">Air Force 1</h4>
+                    <h4 class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1">Air Max 1</h4>
+                    <h4 class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1">Air Jordon 1</h4>
+                    <h4 class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1">Air Force 2</h4>
+                    <h4 class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1">Air Waffle Racer</h4>
+                    <h4 class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1">Air Cortez</h4>
+                </div>
+            </div>
+            <!-- box-3 -->
+            <div class=" space-y-6 text-white">
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-medium">Help</h2>
+                <div class="space-y-3">
+                    <h4 class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1">About Us</h4>
+                    <h4 class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1">FAQs</h4>
+                    <h4 class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1">How it Works</h4>
+                    <h4 class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1">Privacy Policy</h4>
+                    <h4 class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1">Payment Policy</h4>
+                </div>
+            </div>
+            <!-- box-4 -->
+            <div class=" space-y-6 text-white">
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-medium">Get in touch</h2>
+
+                <div class="hover-effect relative group pb-3">
+                    <a href="mailto:example@example.com" class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1 text-xl">customer@nike.com</a>
+                    <span class="tooltip text-orange-600 absolute top-[1px] right-10 transform translate-x-[-50%] p-1 rounded">Contact Us</span>
+                </div>
+                <a href="tel:+923104128366" class="text-gray-300 w-fit cursor-pointer hover:text-white duration-500 hover:pl-1 text-xl">+92554862354</a>
+                
+            </div>
+        </div>
+        <div>
+            <last class="text-base font-light text-center tracking-wider flex items-center justify-center py-3 md:py-0 text-white">&copy; Copyright. All rights reserved.</last>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
